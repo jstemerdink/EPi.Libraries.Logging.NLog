@@ -1,0 +1,1 @@
+﻿Add NLog logging to EPiServer 8.
