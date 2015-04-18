@@ -1,0 +1,1 @@
+﻿Do not forget to set the logging level in the EPiServerLog.config to OFF, this to prvent double logging.
