@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{2E9314CD-0E3F-48CC-A8A2-33173A0FF5D9}"
 	ProjectSection(SolutionItems) = preProject
 		EPi.Libraries.Logging.NLog.nuspec = EPi.Libraries.Logging.NLog.nuspec
+		Solution Files\EPiServer.Libraries.snk = Solution Files\EPiServer.Libraries.snk
 		README.md = README.md
 		readme.txt = readme.txt
 	EndProjectSection

@@ -1,1 +1,1 @@
-﻿Add NLog logging to EPiServer 8.
+﻿Do not forget to set the logging level in the EPiServerLog.config to OFF, this to prvent double logging.
