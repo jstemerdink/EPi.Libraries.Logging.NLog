@@ -108,6 +108,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="NLogger.cs" />
     <Compile Include="NLoggerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
