@@ -9,7 +9,7 @@ This will add NLog logging to your EPiServer site without needing to create Log4
 
 ## Requirements
 
-* EPiServer >= 8.5.0
+* EPiServer >= 8.0.0
 * NLog
 * .Net 4.5
 
