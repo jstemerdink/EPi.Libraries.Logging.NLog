@@ -52,7 +52,6 @@ using EPiServer.Logging;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
 [assembly: Guid("b4287d75-cc5c-4b15-a151-9c648f9b8e8e")]
-[assembly: LoggerFactory(typeof(NLoggerFactory))]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -65,6 +64,6 @@ using EPiServer.Logging;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]
 [assembly: AssemblyInformationalVersion("1.0.0-prerelease")]
