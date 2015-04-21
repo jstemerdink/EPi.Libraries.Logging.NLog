@@ -33,7 +33,6 @@ namespace EPi.Libraries.Logging.NLog
     ///     The initialization module for the translation provider.
     /// </summary>
     [InitializableModule]
-    [ModuleDependency(typeof(FrameworkInitialization))]
     public class NLoggerFactoryInitialization : IInitializableModule
     {
         /// <summary>
