@@ -1,4 +1,4 @@
-﻿// Copyright© 2015 Jeroen Stemerdink. All Rights Reserved.
+﻿// Copyright© 2015 Jeroen Stemerdink. 
 // 
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -30,7 +30,7 @@ using EPiServer.Logging;
 namespace EPi.Libraries.Logging.NLog
 {
     /// <summary>
-    ///     The initialization module for the translation provider.
+    ///     The initialization module for the adding the <see cref="NLoggerFactory"/> to the <see cref="LogManager"/>.
     /// </summary>
     [InitializableModule]
     public class NLoggerFactoryInitialization : IInitializableModule
