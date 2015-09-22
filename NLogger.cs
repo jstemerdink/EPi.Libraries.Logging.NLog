@@ -27,6 +27,7 @@ using EPiServer.Logging;
 
 using NLog;
 
+using ILogger = EPiServer.Logging.ILogger;
 using LogManager = NLog.LogManager;
 
 namespace EPi.Libraries.Logging.NLog
@@ -61,20 +62,11 @@ namespace EPi.Libraries.Logging.NLog
         }
 
         /// <summary>
-        ///     Logs the specified level.
+        /// Logs the provided <paramref name="state"/> with the specified level.
         /// </summary>
-        /// <typeparam name="TState">The type of the t state.</typeparam>
-        /// <typeparam name="TException">The type of the t exception.</typeparam>
-        /// <param name="level">The level.</param>
-        /// <param name="state">The state.</param>
-        /// <param name="exception">The exception.</param>
-        /// <param name="messageFormatter">The message formatter.</param>
+        /// <typeparam name="TState">The type of the state object.</typeparam><typeparam name="TException">The type of the exception.</typeparam><param name="level">The criticality level of the log message.</param><param name="state">The state that should be logged.</param><param name="exception">The exception that should be logged.</param><param name="messageFormatter">The message formatter used to write the state to the log provider.</param><param name="boundaryType">The type at the boundary of the logging framework facing the code using the logging.</param>
         /// <exception cref="Exception">A delegate callback throws an exception.</exception>
-        public void Log<TState, TException>(
-            Level level,
-            TState state,
-            TException exception,
-            Func<TState, TException, string> messageFormatter) where TException : Exception
+        public void Log<TState, TException>(Level level, TState state, TException exception, Func<TState, TException, string> messageFormatter, Type boundaryType) where TException : Exception
         {
             if (messageFormatter == null)
             {
