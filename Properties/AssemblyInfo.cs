@@ -25,10 +25,6 @@ using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-using EPi.Libraries.Logging.NLog;
-
-using EPiServer.Logging;
-
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
