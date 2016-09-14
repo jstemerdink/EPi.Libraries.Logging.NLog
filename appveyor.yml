@@ -17,7 +17,7 @@ build:
 after_build:
 - cmd: nuget pack EPi.Libraries.Logging.NLog.csproj -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
 - cmd: appveyor PushArtifact "EPi.Libraries.Logging.NLog.%GitVersion_NuGetVersion%.nupkg"
-- 7z a EPi.Libraries.Logging.NLog.%GitVersion_NuGetVersion%.zip %APPVEYOR_BUILD_FOLDER%\bin\Release\EPi.Libraries.Favicons.dll
+- 7z a EPi.Libraries.Logging.NLog.%GitVersion_NuGetVersion%.zip %APPVEYOR_BUILD_FOLDER%\bin\Release\EPi.Libraries.Logging.NLog.dll
 - cmd: appveyor PushArtifact "EPi.Libraries.Logging.NLog.%GitVersion_NuGetVersion%.zip"
 before_package:
 - ps: >-
