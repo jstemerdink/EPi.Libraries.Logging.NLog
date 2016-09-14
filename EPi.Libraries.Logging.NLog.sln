@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPi.Libraries.Logging.NLog", "EPi.Libraries.Logging.NLog.csproj", "{30D434F9-E72B-45B8-AB27-B375F4CF40E7}"
 EndProject
@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E86EAF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{2E9314CD-0E3F-48CC-A8A2-33173A0FF5D9}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		EPi.Libraries.Logging.NLog.nuspec = EPi.Libraries.Logging.NLog.nuspec
 		Solution Files\EPiServer.Libraries.snk = Solution Files\EPiServer.Libraries.snk
 		license.txt = license.txt
