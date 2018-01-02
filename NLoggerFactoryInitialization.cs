@@ -29,6 +29,7 @@ namespace EPi.Libraries.Logging.NLog
     ///     The initialization module for the adding the <see cref="NLoggerFactory"/> to the <see cref="LogManager"/>.
     /// </summary>
     [InitializableModule]
+    [ModuleDependency(typeof(FrameworkInitialization))]
     public class NLoggerFactoryInitialization : IInitializableModule
     {
         /// <summary>

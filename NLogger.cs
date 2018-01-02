@@ -44,7 +44,7 @@ namespace EPi.Libraries.Logging.NLog
         /// <param name="name">The name.</param>
         public NLogger(string name)
         {
-            this.logger = LogManager.GetLogger(name);
+            this.logger = LogManager.GetLogger(name: name);
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace EPi.Libraries.Logging.NLog
         /// <returns><c>true</c> if logging on the provided level is enabled; otherwise <c>false</c></returns>
         public bool IsEnabled(Level level)
         {
-            return this.IsEnabled(MapLevel(level));
+            return this.IsEnabled(MapLevel(level: level));
         }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace EPi.Libraries.Logging.NLog
         /// <returns><c>true</c> if the specified level is enabled; otherwise, <c>false</c>.</returns>
         public bool IsEnabled(LogLevel level)
         {
-            return this.logger.IsEnabled(level);
+            return this.logger.IsEnabled(level: level);
         }
 
         /// <summary>
@@ -84,11 +84,11 @@ namespace EPi.Libraries.Logging.NLog
                 return;
             }
 
-            LogLevel mappedLevel = MapLevel(level);
+            LogLevel mappedLevel = MapLevel(level: level);
 
-            if (this.IsEnabled(mappedLevel))
+            if (this.IsEnabled(level: mappedLevel))
             {
-                this.logger.Log(mappedLevel, messageFormatter(state, exception), exception);
+                this.logger.Log(level: mappedLevel, message: messageFormatter(arg1: state, arg2: exception), argument: exception);
             }
         }
 
@@ -115,7 +115,7 @@ namespace EPi.Libraries.Logging.NLog
                 case Level.Critical:
                     return LogLevel.Fatal;
                 default:
-                    throw new ArgumentOutOfRangeException("level");
+                    throw new ArgumentOutOfRangeException(nameof(level));
             }
         }
     }
