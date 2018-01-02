@@ -35,7 +35,7 @@ namespace EPi.Libraries.Logging.NLog
         /// <summary>
         ///     Check if the initialization has been done.
         /// </summary>
-        private static bool initialized;
+        private bool initialized;
 
         /// <summary>
         ///     Initializes this instance.
@@ -58,14 +58,14 @@ namespace EPi.Libraries.Logging.NLog
             }
 
             // If already initialized, no need to do it again.
-            if (initialized)
+            if (this.initialized)
             {
                 return;
             }
 
             LogManager.Instance.AddFactory(new NLoggerFactory());
 
-            initialized = true;
+            this.initialized = true;
         }
 
         /// <summary>
@@ -91,6 +91,7 @@ namespace EPi.Libraries.Logging.NLog
         /// </remarks>
         public void Uninitialize(InitializationEngine context)
         {
+            // No need to uninitialize any functionality.
         }
     }
 }
