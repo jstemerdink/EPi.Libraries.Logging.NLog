@@ -9,6 +9,9 @@ By Jeroen Stemerdink
 [![GitHub license](https://img.shields.io/badge/license-MIT%20license-blue.svg?style=flat)](license.txt)
 [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=jstemerdink:EPi.Libraries.Logging.NLog)](https://sonarcloud.io/dashboard?id=jstemerdink%3AEPi.Libraries.Logging.NLog)
 
+## NOTE
+As from CMS12 you can use configure your logging without the need of a custom provider, see [Optimizely logging](https://world.optimizely.com/documentation/developer-guides/CMS/logging/). For adding Serilog see my [blog](https://jstemerdink.blog/) 
+
 ## About
 This will add NLog logging to your EPiServer site without needing to create Log4Net appenders
 
